@@ -34,7 +34,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest tests/ -v
+          pytest
 
       - name: Train models
         run: |
