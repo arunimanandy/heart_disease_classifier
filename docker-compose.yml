@@ -1,0 +1,37 @@
+services:
+  api:
+    build: .
+    container_name: heart-disease-api
+    ports:
+      - "8000:8000"
+    networks:
+      - mlops-net
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - mlops-net
+    depends_on:
+      - api
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    networks:
+      - mlops-net
+    depends_on:
+      - prometheus
+
+networks:
+  mlops-net:
+    driver: bridge

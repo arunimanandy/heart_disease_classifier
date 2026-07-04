@@ -1,0 +1,34 @@
+{
+  "title": "Heart Disease API Monitoring",
+  "panels": [
+    {
+      "title": "Request Count",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "http_requests_total"
+        }
+      ]
+    },
+    {
+      "title": "Request Latency",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "http_request_duration_seconds_sum / http_request_duration_seconds_count"
+        }
+      ]
+    },
+    {
+      "title": "API Errors",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "http_requests_total{status=~\"5..\"}"
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 39,
+  "version": 1
+}
