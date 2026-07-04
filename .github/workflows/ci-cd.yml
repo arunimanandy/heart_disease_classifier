@@ -26,7 +26,7 @@ jobs:
 
       - name: Lint code
         run: |
-          flake8 src api tests --max-line-length=100
+          flake8 src api tests --max-line-length=120
 
       - name: Download dataset
         run: |
