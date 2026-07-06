@@ -155,10 +155,10 @@ def main():
                 random_state=RANDOM_STATE,
             ),
             {
-                "model_type":"XGBoost",
-                "n_estimators":200,
-                "max_depth":4,
-                "learning_rate":0.1,
+                "model_type": "XGBoost",
+                "n_estimators": 200,
+                "max_depth": 4,
+                "learning_rate": 0.1,
             },
         ),
     ]

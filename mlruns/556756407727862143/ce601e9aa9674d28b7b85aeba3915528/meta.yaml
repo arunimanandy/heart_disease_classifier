@@ -1,0 +1,15 @@
+artifact_uri: file:///home/cloud/Desktop/HeartDiseasesClsf/heart-disease-clsf-mlops/mlruns/556756407727862143/ce601e9aa9674d28b7b85aeba3915528/artifacts
+end_time: 1783142586074
+entry_point_name: ''
+experiment_id: '556756407727862143'
+lifecycle_stage: active
+run_id: ce601e9aa9674d28b7b85aeba3915528
+run_name: random_forest
+run_uuid: ce601e9aa9674d28b7b85aeba3915528
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783142578552
+status: 3
+tags: []
+user_id: cloud
