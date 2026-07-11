@@ -141,17 +141,3 @@ GitHub Actions pipeline runs:
 6. Docker build
 7. Artifact upload
 
-## Deliverables Checklist
-
-- [x] Data ingestion script
-- [x] EDA script and plots
-- [x] Two ML models
-- [x] MLflow tracking
-- [x] Reproducible sklearn pipeline
-- [x] FastAPI `/predict` endpoint
-- [x] Dockerfile and docker-compose
-- [x] Pytest tests
-- [x] GitHub Actions workflow
-- [x] Kubernetes manifests
-- [x] Prometheus/Grafana monitoring config
-- [x] 10-page report template
